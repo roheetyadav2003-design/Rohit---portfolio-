@@ -1,0 +1,324 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rohit Yadav Portfolio</title>
+  <meta name="description" content="Rohit Yadav — Electrical Engineer  Fond of Automation, Drives, PLC/SCADA, and IIOT." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif; }
+    .grad-text { background: linear-gradient(90deg, #2563eb, #06b6d4); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .card { border-radius: 1rem; border: 1px solid rgba(0,0,0,0.06); box-shadow: 0 4px 20px rgba(0,0,0,0.04); }
+    .chip { border: 1px solid rgba(0,0,0,0.1); border-radius: 9999px; padding: .25rem .6rem; font-size: .75rem; }
+    .progress { height: 8px; border-radius: 9999px; background: rgba(0,0,0,.08); overflow: hidden; }
+    .progress > div { height: 100%; width: 0; transition: width 1s ease; background: linear-gradient(90deg, #2563eb, #06b6d4); }
+    .dark .card { border-color: rgba(255,255,255,0.12); box-shadow: 0 6px 24px rgba(0,0,0,0.3); }
+    .dark .chip { border-color: rgba(255,255,255,0.14); }
+    .timeline::before { content: ""; position: absolute; left: 10px; top: 0; bottom: 0; width: 2px; background: rgba(0,0,0,0.1); }
+    .dark .timeline::before { background: rgba(255,255,255,0.15); }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900 dark:bg-black dark:text-gray-100">
+  <!-- Navbar -->
+  <header class="sticky top-0 z-40 backdrop-blur bg-white/70 dark:bg-black/40 border-b border-black/5 dark:border-white/10">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+      <a href="#home" class="font-bold">Rohit Yadav</a>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="#experience" class="hover:text-black dark:hover:text-white">Experience</a>
+        <a href="#projects" class="hover:text-black dark:hover:text-white">Projects</a>
+        <a href="#skills" class="hover:text-black dark:hover:text-white">Skills</a>
+        <a href="#education" class="hover:text-black dark:hover:text-white">Education</a>
+        <a href="#achievements" class="hover:text-black dark:hover:text-white">Roles and responsibilities</a>
+        <a href="#contact" class="hover:text-black dark:hover:text-white">Contact</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <button id="themeBtn" class="chip">🌙</button>
+        <a href="https://drive.google.com/file/d/1mgp5HpnH4iXE41Ff42sY4ad7MXSMXwNg/view?usp=drivesdk" target="_blank">Download My Resume</a>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 pt-16 pb-10">
+      <div class="grid md:grid-cols-3 gap-10 items-center">
+        <div class="md:col-span-2">
+          <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+           Welcome to Rohit's Portfolio
+          </h1>
+          <p class="mt-2 text-xl grad-text font-semibold">
+            <span id="typed"></span>
+          </p>
+          <p class="mt-4 max-w-2xl text-gray-700 dark:text-gray-300">
+            Section Engineer at AM/NS India (Galvanizing Line, Cold Rolled Mill). Experienced in PLC, SCADA, Drives, and Industrial Automation. Also explored IoT, embedded systems, and AI/Computer Vision (YOLOv8, OpenCV).
+          </p>
+          <div class="mt-6 flex flex-wrap items-center gap-3">
+            <span class="chip">📍 Surat, Gujarat, India</span>
+            <a class="chip" href="mailto:roheetyadav.2003@gmail.com">✉️ Email</a>
+            <a class="chip" href="tel:7777965896">📞 Call</a>
+            <a class="chip" href="https://github.com/your-username" target="_blank" rel="noreferrer">🐙 GitHub</a>
+            <a class="chip" href="https://www.linkedin.com/in/roheetyadav" target="_blank" rel="noreferrer">🔗 LinkedIn</a>
+          </div>
+        </div>
+        
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="py-14">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-8 border-l-4 border-blue-500 pl-3">Experience</h2>
+      <div class="relative timeline pl-8 space-y-8">
+        <div class="relative card p-5 bg-white dark:bg-gray-900">
+          <div class="absolute left-0 -ml-[7px] mt-1 w-3.5 h-3.5 rounded-full bg-blue-500"></div>
+          <div class="flex items-center justify-between gap-3 flex-wrap">
+            <h3 class="font-semibold">Section Engineer </h3>
+            <span class="text-xs text-gray-500">Aug 2024 – Present</span>
+          </div>
+          <p class="text-sm text-gray-600 dark:text-gray-400">AM/NS India — Galvanizing Line, Cold Rolled Mill</p>
+          <ul class="mt-3 list-disc pl-5 space-y-1 text-sm text-gray-700 dark:text-gray-300">
+            <li>Commissioning & troubleshooting of drives and PLC–SCADA systems.</li>
+            <li>PLC-SCADA integration and process optimization.</li>
+            <li>Project planning, vendor coordination, and safety compliance.</li>
+          </ul>
+        </div>
+
+        <div class="relative card p-5 bg-white dark:bg-gray-900">
+          <div class="absolute left-0 -ml-[7px] mt-1 w-3.5 h-3.5 rounded-full bg-blue-500"></div>
+          <div class="flex items-center justify-between gap-3 flex-wrap">
+            <h3 class="font-semibold">In-Plant Trainee</h3>
+            <span class="text-xs text-gray-500">Jan 2024 – Apr 2024</span>
+          </div>
+          <p class="text-sm text-gray-600 dark:text-gray-400">L&T Ltd. (Heavy Engineering Division)</p>
+          <ul class="mt-3 list-disc pl-5 space-y-1 text-sm text-gray-700 dark:text-gray-300">
+            <li>Internship in Electrical Maintenance department.</li>
+            <li>Worked on IoT & embedded systems; developed small automation projects.</li>
+          </ul>
+        </div>
+
+        <div class="relative card p-5 bg-white dark:bg-gray-900">
+          <div class="absolute left-0 -ml-[7px] mt-1 w-3.5 h-3.5 rounded-full bg-blue-500"></div>
+          <div class="flex items-center justify-between gap-3 flex-wrap">
+            <h3 class="font-semibold">Intern (Panel Manufacturing)</h3>
+            <span class="text-xs text-gray-500">Jul 2023 – Aug 2023</span>
+          </div>
+          <p class="text-sm text-gray-600 dark:text-gray-400">PTS Automation</p>
+          <ul class="mt-3 list-disc pl-5 space-y-1 text-sm text-gray-700 dark:text-gray-300">
+            <li>Electrical panel assembly, quality control, and production processes.</li>
+            <li>Hands-on with VFD operation & fault troubleshooting.</li>
+          </ul>
+        </div>
+
+        <div class="relative card p-5 bg-white dark:bg-gray-900">
+          <div class="absolute left-0 -ml-[7px] mt-1 w-3.5 h-3.5 rounded-full bg-blue-500"></div>
+          <div class="flex items-center justify-between gap-3 flex-wrap">
+            <h3 class="font-semibold">Sales Associate</h3>
+            <span class="text-xs text-gray-500">Oct 2021 – Feb 2022</span>
+          </div>
+          <p class="text-sm text-gray-600 dark:text-gray-400">GTPL Broadband Pvt. Ltd.</p>
+          <ul class="mt-3 list-disc pl-5 space-y-1 text-sm text-gray-700 dark:text-gray-300">
+            <li>Sales & marketing for broadband services; customer acquisition.</li>
+            <li>Exposure to revenue growth strategies & field operations.</li>
+          </ul>
+        </div>
+
+        <div class="relative card p-5 bg-white dark:bg-gray-900">
+          <div class="absolute left-0 -ml-[7px] mt-1 w-3.5 h-3.5 rounded-full bg-blue-500"></div>
+          <div class="flex items-center justify-between gap-3 flex-wrap">
+            <h3 class="font-semibold">HR Associate</h3>
+            <span class="text-xs text-gray-500">Aug 2021 – Oct 2021</span>
+          </div>
+          <p class="text-sm text-gray-600 dark:text-gray-400">Edu World International</p>
+          <ul class="mt-3 list-disc pl-5 space-y-1 text-sm text-gray-700 dark:text-gray-300">
+            <li>Recruited students for international higher education opportunities.</li>
+            <li>HR coordination, communication, and candidate screening.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-14">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-8 border-l-4 border-blue-500 pl-3">Projects</h2>
+      <div id="projectGrid" class="grid gap-6 md:grid-cols-2">
+        <article data-tags="iot automation sensors blynk" class="card p-6 bg-white dark:bg-gray-900">
+          <h3 class="font-semibold text-lg">Automatic Irrigation System (IoT)</h3>
+          <p class="mt-2 text-sm text-gray-700 dark:text-gray-300">Microcontroller-based irrigation using soil moisture sensors and Blynk IoT for real-time monitoring and control.</p>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <span class="chip">IoT</span><span class="chip">Automation</span><span class="chip">Sensors</span><span class="chip">Blynk</span>
+          </div>
+        </article>
+        <article data-tags="computer-vision yolo opencv safety ai" class="card p-6 bg-white dark:bg-gray-900">
+          <h3 class="font-semibold text-lg">PPE Detection System (AI)</h3>
+          <p class="mt-2 text-sm text-gray-700 dark:text-gray-300">YOLOv8 + OpenCV model for real-time PPE compliance detection (helmets, vests, gloves, masks) to improve industrial safety.</p>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <span class="chip">Computer Vision</span><span class="chip">YOLO</span><span class="chip">OpenCV</span><span class="chip">Safety</span>
+          </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-14">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-8 border-l-4 border-blue-500 pl-3">Technical Skills</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <div class="mb-4">
+            <div class="flex justify-between text-sm mb-1"><span>PLC (TIA Portal, RSLogix, WPLSoft)</span><span>90%</span></div>
+            <div class="progress"><div data-width="90%"></div></div>
+          </div>
+          <div class="mb-4">
+            <div class="flex justify-between text-sm mb-1"><span>SCADA (Wonderware Intouch, OPC)</span><span>85%</span></div>
+            <div class="progress"><div data-width="85%"></div></div>
+          </div>
+          <div class="mb-4">
+            <div class="flex justify-between text-sm mb-1"><span>Drives (ABB, VFD Troubleshooting)</span><span>85%</span></div>
+            <div class="progress"><div data-width="85%"></div></div>
+          </div>
+        </div>
+        <div>
+          <div class="mb-4">
+            <div class="flex justify-between text-sm mb-1"><span>Panel Design (MCC, PCC, AMF, APFC)</span><span>80%</span></div>
+            <div class="progress"><div data-width="80%"></div></div>
+          </div>
+          <div class="mb-4">
+            <div class="flex justify-between text-sm mb-1"><span>Python (OpenCV, YOLO)</span><span>80%</span></div>
+            <div class="progress"><div data-width="80%"></div></div>
+          </div>
+          <div class="mb-4">
+            <div class="flex justify-between text-sm mb-1"><span>AutoCAD Electrical</span><span>70%</span></div>
+            <div class="progress"><div data-width="70%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Soft Skills -->
+  <section class="py-14">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-8 border-l-4 border-blue-500 pl-3">Soft Skills</h2>
+      <div class="flex flex-wrap gap-3">
+        <span class="chip">Strategic Thinker</span>
+        <span class="chip">Quick Learner</span>
+        <span class="chip">Synergy</span>
+        <span class="chip">Thought Leadership</span>
+        <span class="chip">Go Getter</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="py-14">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-8 border-l-4 border-blue-500 pl-3">Education</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        <div class="card p-4 bg-white dark:bg-gray-900">
+          <h3 class="font-semibold">B.E. (Electrical Engineering)</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">GEC Surat</p>
+          <p class="text-xs text-gray-500">2020 – 2024 | CGPA: 8.61</p>
+        </div>
+        <div class="card p-4 bg-white dark:bg-gray-900">
+          <h3 class="font-semibold">HSC (Science)</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">S.E.M Higher Secondary School, Surat</p>
+          <p class="text-xs text-gray-500">2019 – 2020 | 66.16%</p>
+        </div>
+        <div class="card p-4 bg-white dark:bg-gray-900">
+          <h3 class="font-semibold">SSC</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">Prince Public School, Delhi</p>
+          <p class="text-xs text-gray-500">2017 – 2018 | 88%</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements" class="py-14">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-8 border-l-4 border-blue-500 pl-3">Roles and responsiblities</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        <div class="card p-4 bg-white dark:bg-gray-900">
+          <h3 class="font-semibold">Served as Visiting Professor</h3>
+          <p class="text-sm text-gray-700 dark:text-gray-300">Served as Visiting Professor, Government Engineering college, Surat</p>
+        </div>
+        <div class="card p-4 bg-white dark:bg-gray-900">
+          <h3 class="font-semibold">Cordinate event name "Talk The Thoughts" </h3>
+          <p class="text-sm text-gray-700 dark:text-gray-300">Directed, Talk the Thoughts, at college event Managed 300+ students from various colleges </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-14">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-8 border-l-4 border-blue-500 pl-3">Contact</h2>
+      <div class="grid md:grid-cols-3 gap-4 card p-5 bg-white dark:bg-gray-900">
+        <div>✉️ <a class="text-blue-600 dark:text-blue-400 hover:underline" href="mailto:roheetyadav.2003@gmail.com">roheetyadav.2003@gmail.com</a></div>
+        <div>📞 <a class="text-blue-600 dark:text-blue-400 hover:underline" href="tel:7777965896">7777965896</a></div>
+        <div>📍 Surat, Gujarat, India</div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-10">
+    <div class="max-w-6xl mx-auto px-4 text-center text-sm text-gray-500">
+      © <span id="year"></span> Rohit Yadav.
+    </div>
+  </footer>
+
+  <script>
+    // Typing effect (vanilla)
+    const typedEl = document.getElementById('typed');
+    const phrases = ['Electrical Engineer', 'Automation & Drives', 'IoT and robotics Enthusiast'];
+    let pi = 0, ci = 0, deleting = false;
+    function typeLoop() {
+      const current = phrases[pi];
+      if (!deleting) {
+        ci++;
+        typedEl.textContent = current.slice(0, ci);
+        if (ci === current.length) { deleting = true; setTimeout(typeLoop, 1400); return; }
+        setTimeout(typeLoop, 60);
+      } else {
+        ci--;
+        typedEl.textContent = current.slice(0, ci);
+        if (ci === 0) { deleting = false; pi = (pi + 1) % phrases.length; setTimeout(typeLoop, 300); return; }
+        setTimeout(typeLoop, 40);
+      }
+    }
+    typeLoop();
+
+    // Theme toggle
+    const themeBtn = document.getElementById('themeBtn');
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const stored = localStorage.getItem('theme');
+    if ((stored === 'dark') || (!stored && prefersDark)) document.documentElement.classList.add('dark');
+    themeBtn.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+    });
+
+    // Progress bars animate on load
+    document.querySelectorAll('.progress > div').forEach(el => {
+      const w = el.getAttribute('data-width') || '0%';
+      requestAnimationFrame(() => { el.style.width = w; });
+    });
+
+  
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
